@@ -14,7 +14,7 @@ package.
 
 To get a list of all of the tags your version of RPM knows about, run the
 command 'rpm --querytags'. It will print out a list like (but much longer
-then) this:
+than) this:
 
 \verbatim
     BUILDHOST
@@ -30,7 +30,7 @@ then) this:
 \endverbatim
 
 Each of these tags also has a version with a RPMTAG_ prefix, such as
-RPMTAG_NAME. You can use this tags with or without the RPMTAG_ prefix.
+RPMTAG_NAME. You can use these tags with or without the RPMTAG_ prefix.
 
 A tag can consist of one element or an array of elements. Each element can
 be a string or number only.
@@ -41,7 +41,7 @@ A query format is passed to RPM after the --queryformat argument, and normally
 should be enclosed in quotes. This query format is then used to print
 the information section of a query.
 
-The query format is similar to a C style printf string, which the printf(2)
+The query format is similar to a C style printf string, which the printf(3)
 man page provides a good introduction to. However, as RPM already knows the
 type of data that is being printed, you must omit the type specifier. In
 its place put the tag name you wish to print enclosed in curly braces
